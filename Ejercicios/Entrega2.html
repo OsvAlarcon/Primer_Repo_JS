@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        border: 2px solid grey;
+        padding: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0%;
+        margin-top: 10;
+      }
+      ul li {
+        cursor: pointer;
+      }
+      ul li:hover {
+        border: 2px solid grey;
+      }
+      #inventario li {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Hello! What do you want to obtain?</h1>
+      <ul>
+        <li onclick="comprar(pocion)">Pocion Multijugos</li>
+        <li onclick="comprar(varita)">Varita</li>
+        <li onclick="comprar(encantamientos)">Encantamientos</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Inventario Magico</h2>
+      <ul id="inventario"></ul>
+      <li><img src="" alt="" /></li>
+      <h2 id="pound">Pound: <span> </span></h2>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

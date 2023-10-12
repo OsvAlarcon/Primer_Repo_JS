@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btnEntrenar">Entrenar</button>
+    <script>
+      const btnEntrenar = document.querySelector("btnEntrenar");
+      btnEntrenar.addEventListener("click", entrenar);
+      //OBJETO POKEMIN
+      const charmander = {
+        nombre: "Charmander",
+        nivel: 0,
+        hp: 3,
+        evoluciones: [, , , , , "Charmelion", , , , , "Charizard"],
+      };
+
+      let miPokemon = charmander;
+
+      function entrenar() {
+        console.log("Hice click en entrenar");
+        miPokemon.nivel++;
+        miPokemon.hp += miPokemon.nivel;
+        console.log (`Tu ${miPokemon.nombre})
+      }
+    </script>
+  </body>
+</html>
